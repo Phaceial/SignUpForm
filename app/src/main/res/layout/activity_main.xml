@@ -12,7 +12,8 @@
             android:layout_height="wrap_content"
             android:hint="Name" app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="86dp" app:layout_constraintStart_toStartOf="parent" android:id="@+id/nameInput"
-            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
+            android:inputType="textPersonName"/>
     <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -26,7 +27,7 @@
             android:layout_height="wrap_content"
             android:hint="Password"
             app:layout_constraintStart_toStartOf="parent" android:id="@+id/passInput"
-            app:layout_constraintHorizontal_bias="1.0" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
             android:inputType="textPassword" app:layout_constraintTop_toBottomOf="@+id/emailInput"/>
     <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -34,17 +35,15 @@
             android:hint="Password Confirmation"
             android:id="@+id/passConfirmInput"
             app:layout_constraintTop_toBottomOf="@+id/passInput" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
+            android:inputType="textPassword"/>
     <Button
             android:text="Save"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button"
+            android:id="@+id/saveButton"
             app:layout_constraintTop_toBottomOf="@+id/passConfirmInput" android:layout_marginTop="40dp"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintEnd_toEndOf="parent"/>
-    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
-                                                android:id="@+id/guideline" app:layout_constraintGuide_begin="20dp"
-                                                android:orientation="vertical"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
