@@ -30,9 +30,9 @@ public class FormActivity extends AppCompatActivity {
                     Toast.makeText(FormActivity.this, "Must enter all requested information", Toast.LENGTH_SHORT).show();
                 } else if(!pass.getText().toString().equals(passConfirm.getText().toString())){
                     Toast.makeText(FormActivity.this, "Passwords do not match", Toast.LENGTH_SHORT).show();
-                } else if (!name.getText().toString().isEmpty() ||
-                        !email.getText().toString().isEmpty() ||
-                        !pass.getText().toString().isEmpty() ||
+                } else if (!name.getText().toString().isEmpty() &&
+                        !email.getText().toString().isEmpty() &&
+                        !pass.getText().toString().isEmpty() &&
                         !passConfirm.getText().toString().isEmpty()){
                     Toast.makeText(FormActivity.this, "Welcome " + name.getText().toString() + " to the SignUpForm App", Toast.LENGTH_SHORT).show();
                 }
